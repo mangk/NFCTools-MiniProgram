@@ -1,0 +1,32 @@
+<view class="c">
+  写入扇区/块
+  <view>
+    <input style="width: 20%;float: left;" type="text" value="{{ sectorIndex }}" bindinput="inputSectorIndex" placeholder="0~15" />
+    <text style="float: left;">/</text>
+    <input style="width: 20%;float: left;" type="text" value="{{ blockIndex }}" bindinput="inputBlockIndex" placeholder="0~3"/>
+  </view>
+</view>
+<view style="clear: both;"></view>
+<view class="c" style="margin-top: 10px;">
+  选择密钥
+  <input type="text" value="{{ authKey }}" bindinput="inputAuthKey" maxlength="12"/>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{defaultKey}}">
+    <button size="mini">选择密钥</button>
+  </picker>
+</view>
+<view class="c">
+  将密钥作为
+  <radio-group bindchange="radioChange">
+    <label class="weui-cell weui-check__label" wx:for="{{chekcKeyItems}}" wx:key="value">
+      <radio value="{{item.value}}" checked="{{item.checked}}" />{{item.name}}
+    </label>
+  </radio-group>
+</view>
+<view class="c">
+  写入内容(HEX)
+  <textarea value="{{ content }}" bindinput="inputContent" style="border:1px solid #ccc;font-size: 24px;height: 26px;margin: 0 10px;border-radius: 5px;" auto-height="true" maxlength="32" placeholder="16位16进制数"></textarea>
+</view>
+<button type="default" style="background-color: #cd5c5c;color: #fff;" bindtap="write">写入</button>
+<!-- <button type="primary" bindtap="goRead">
+  去读取
+</button> -->

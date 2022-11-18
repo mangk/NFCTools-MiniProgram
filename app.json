@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/nfcr/nfcr",
+    "pages/nfcw/nfcw"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "selectedIconPath": "img/nfc-full-0.png",
+        "iconPath": "img/nfc.png",
+        "pagePath": "pages/nfcr/nfcr",
+        "text": "读取"
+      },
+      {
+        "selectedIconPath": "img/nfc-full-1.png",
+        "iconPath": "img/nfc.png",
+        "pagePath": "pages/nfcw/nfcw",
+        "text": "写入"
+      }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

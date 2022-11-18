@@ -1,0 +1,30 @@
+<!--pages/nfct/nfct.wxml-->
+<view class="c">
+    读取扇区
+  <input type="text" value="{{ sectorIndex }}" bindinput="inputSectorIndex" placeholder="0~15"/>
+</view>
+<view class="c">
+  选择密钥
+  <input type="text" value="{{ authKey }}" bindinput="inputAuthKey" maxlength="12"/>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{defaultKey}}">
+    <button size="mini">选择密钥</button>
+  </picker>
+</view>
+<view class="c">
+  将密钥作为
+  <radio-group bindchange="radioChange">
+    <label class="weui-cell weui-check__label" wx:for="{{chekcKeyItems}}" wx:key="value">
+      <radio value="{{item.value}}" checked="{{item.checked}}" />{{item.name}}
+    </label>
+  </radio-group>
+</view>
+<view class="c">
+  读取结果(HEX)
+  <view wx:for="{{result}}" wx:key="item" style="background-color: #fff;margin: 0 10px;">
+    <text user-select style="font-size: 16px;">{{item}}</text>
+  </view>
+</view>
+<button type="primary" style="background-color: #8fbc8f;color: #fff;" bindtap="read">读取</button>
+<!-- <button type="warn" bindtap="goWrite">
+  去写入
+</button> -->
