@@ -9,16 +9,8 @@ Page({
     sectorIndex: 0,
     authKey: "FFFFFFFFFFFF",
     useAuthKey: "A",
-    defaultKey: [
-      "FFFFFFFFFFFF",
-      "D3F7D3F7D3F7",
-      "A0A1A2A3A4A5",
-      "B0B1B2B3B4B5",
-      "AABBCCDDEEFF",
-      "A0B1C2D3E4F5",
-      "B0B1B2B3B4B5",
-      "000000000000",
-    ],
+    defaultKey: ["FFFFFFFFFFFF", "D3F7D3F7D3F7", "A0A1A2A3A4A5", "B0B1B2B3B4B5", "AABBCCDDEEFF", "A0B1C2D3E4F5", "B0B1B2B3B4B5", "000000000000"],
+    defaultSector: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
     chekcKeyItems: [
       { value: 'A', name: '密钥A', checked: 'true' },
       { value: 'B', name: '密钥B' },
@@ -104,9 +96,14 @@ Page({
       useAuthKey: e.detail.value
     })
   },
-  bindPickerChange(e) {
+  bindKeyPickerChange(e) {
     this.setData({
       authKey: this.data.defaultKey[e.detail.value]
+    })
+  },
+  bindSectorPickerChange(e) {
+    this.setData({
+      sectorIndex: this.data.defaultSector[e.detail.value]
     })
   },
   goWrite: function () {

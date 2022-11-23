@@ -3,7 +3,7 @@
 # NFC基础知识
 欢迎查看我的文章[NFC基础知识与读写](https://mangk.github.io/2022/11/18/NFC基础知识与读写/)
 # 示例
-![image](./img/show.gif)
+![image](https://mangk-1300208806.cos.ap-beijing.myqcloud.com/github/NFCTools-MiniProgram/show.gif)
 # 支持情况
 - 标签类型
   - ✅MifareClassic(read|write)

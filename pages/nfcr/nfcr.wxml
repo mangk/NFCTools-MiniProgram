@@ -2,11 +2,14 @@
 <view class="c">
     读取扇区
   <input type="text" value="{{ sectorIndex }}" bindinput="inputSectorIndex" placeholder="0~15"/>
+  <picker bindchange="bindSectorPickerChange" value="{{index}}" range="{{defaultSector}}">
+    <button size="mini">选择扇区</button>
+  </picker>
 </view>
 <view class="c">
   选择密钥
   <input type="text" value="{{ authKey }}" bindinput="inputAuthKey" maxlength="12"/>
-  <picker bindchange="bindPickerChange" value="{{index}}" range="{{defaultKey}}">
+  <picker bindchange="bindKeyPickerChange" value="{{index}}" range="{{defaultKey}}">
     <button size="mini">选择密钥</button>
   </picker>
 </view>
