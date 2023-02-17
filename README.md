@@ -8,7 +8,7 @@
 - 标签类型
   - ✅MifareClassic(read|write)
   - ❌MifareUtralight
-  - ❌Ndef
+  - ✅Ndef(read|write is under development)
   - ❌NfcA
   - ❌NfcB
   - ❌NfcF

@@ -1,13 +1,17 @@
 {
-  "pages":[
-    "pages/nfcr/nfcr",
-    "pages/nfcw/nfcw"
+  "pages": [
+    "pages/home/r",
+    "pages/home/w",
+    "pages/mifareClassic/r",
+    "pages/mifareClassic/w",
+    "pages/ndef/r",
+    "pages/ndef/w"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#000000",
@@ -16,15 +20,16 @@
       {
         "selectedIconPath": "img/nfc-full-0.png",
         "iconPath": "img/nfc.png",
-        "pagePath": "pages/nfcr/nfcr",
+        "pagePath": "pages/home/r",
         "text": "读取"
       },
       {
         "selectedIconPath": "img/nfc-full-1.png",
         "iconPath": "img/nfc.png",
-        "pagePath": "pages/nfcw/nfcw",
+        "pagePath": "pages/home/w",
         "text": "写入"
-      }]
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

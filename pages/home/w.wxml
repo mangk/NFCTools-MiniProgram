@@ -1,0 +1,15 @@
+<!--pages/home/r.wxml-->
+
+<navigator url="/pages/mifareClassic/w">
+  <button>MifareClassic</button>
+</navigator>
+<view>
+  MifareClassic 标签按扇区写入
+</view>
+<navigator url="/pages/ndef/w">
+  <button>NDEF</button>
+</navigator>
+
+<view>
+  NDEF message 内容写入
+</view>

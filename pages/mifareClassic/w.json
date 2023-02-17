@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationStyle":"default",
+  "navigationBarBackgroundColor": "#cd5c5c",
+  "navigationBarTitleText": "MifareClassic写入"
+}

@@ -1,0 +1,24 @@
+<view>
+  标签MAC：{{id}}
+</view>
+<view>
+  标签类型：
+  <view wx:for="{{type}}">
+  <view style="margin-left: 20px;">
+    <view>
+    {{item}}
+    </view>
+  </view>
+  </view>
+</view>
+<view>
+  NDEF记录：
+  <view wx:for="{{records}}">
+  <view style="margin-left: 20px;margin-bottom: 10px;border-bottom: 1px solid #ccc;">
+    <view>tnf:{{item.tnf}}</view>
+    <view>type:{{item.type}}</view>
+    <view>payload:{{item.payload}}</view>
+  </view>
+  </view>
+</view>
+<button type="primary" bindtap="readNdef">开始读取</button>
